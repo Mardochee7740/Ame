@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Une question ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- SCÈNE 0 : PRÉNOM + MUSIQUE -->
+<section class="scene active" id="scene-start">
+  <div class="box">
+    <h1>Avant de commencer…</h1>
+    <p>Entre ton prénom 💕</p>
+    <input type="text" id="nameInput" placeholder="Ton prénom">
+    <div class="controls">
+      <button id="playBtn">Activer la musique ▶️</button>
+      <button id="startBtn">Commencer ❤️</button>
+    </div>
+    <div class="small-controls">
+      <button id="configBtn" class="config-btn">Configurer la sauvegarde (Sheets)</button>
+      <span id="configStatus" class="config-status"></span>
+    </div>
+  </div>
+</section>
+
+<!-- SCÈNE 1 : TEXTE -->
+<section class="scene" id="scene-story">
+  <div class="box" id="storyBox">
+    <div id="storyImage" class="story-image"></div>
+    <p id="storyText"></p>
+    <small class="continue">(touche pour continuer...)</small>
+  </div>
+</section>
+
+<!-- SCÈNE 2 : QUESTION -->
+<section class="scene" id="scene-question">
+  <div class="box">
+    <h1 id="finalQuestion"></h1>
+
+    <div class="buttons">
+      <button id="yesBtn">OUI 😍</button>
+      <button id="noBtn">NON 😢</button>
+    </div>
+  </div>
+</section>
+
+<!-- SCÈNE 3 : FINAL -->
+<section class="scene" id="scene-final">
+  <div class="final-box">
+    <h1 id="finalText"></h1>
+    <p>Ce n’est pas un jeu… c’est mon cœur.</p>
+    <div class="message-form">
+      <label for="messageInput">Laisse-moi un mot :</label>
+      <textarea id="messageInput" placeholder="Écris un petit mot..."></textarea>
+      <div class="controls">
+        <button id="sendMessageBtn">Envoyer</button>
+        <span id="sendStatus"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
