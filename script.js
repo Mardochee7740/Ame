@@ -99,8 +99,8 @@ const storyScenes = [
   { text: "Chaque notification WhatsApp me faisait sourire\nMême tard le soir, même le matin au réveil", visual: "📬😊" },
   { text: "Les heures passaient sans qu'on le voit\nOn oubliait le temps en parlant", visual: "⏰🌙" },
   { text: "Et sans qu'on le prévoie vraiment…\nLes mots sont sortis", visual: "💕💬" },
-  { text: "Je t'ai dit 'je t'aime'…\nEt tu l'as reçu comme une promesse", visual: "💌❤️" },
-  { text: "Mais on savait qu'il manquait quelque chose\nCe moment où on se verrait enfin en vrai", visual: "👁️✨" },
+  { text: "Je t'ai dit 'tu me plait'…\nEt tu ne m'a pas écoutée", visual: "💌❤️" },
+  { text: "Mais je savait qu'il manquait quelque chose\nCe moment où on se verrait enfin en vrai", visual: "👁️✨" },
   { text: "Et bientôt ça va arriver…\nCe moment magique où tu seras vraiment là", visual: "🤍🎯" },
   { text: "Je pense à ce jour avant d'endormir\nQuand je vais enfin te voir en personne", visual: "💭✨" },
   { text: "Tes messages me manquent quand tu dors\nMais je sais que tu reve de moi surement de temps en temps", visual: "📱💕" },
@@ -344,4 +344,5 @@ yesBtn.onclick = () => {
     }
   }, 150);
 };
+
 
