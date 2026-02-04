@@ -107,7 +107,7 @@ const storyScenes = [
   { text: "On a parlé de tout et de rien\nDe toi, de moi", visual: "🌙💬" },
   { text: "Tu es devenue mon 'bonne nuit' préférée\nMa première pensée en me réveillant", visual: "☀️🌙" },
   { text: "Je ne fais que penser à toi chaque jour\nTu m'as tellement envouté", visual: "❤️🔥" },
-  { text: "Les jours passent et j'attends ce moment\nOù je vais pouvoir te prendre dans mes bras", visual: "🤗💑", image: "photo3.jpg" },
+  { text: "Les jours passent et j'attends ce moment\nOù je vais pouvoir te prendre dans mes bras", visual: "🤗💑" },
   { text: "Mais avant ça… avant qu'on se voit…\nIl y a quelque chose que je dois vraiment te demander", visual: "❓💍" },
   { text: "Quelque chose que 'je t'aime' sur WhatsApp ne suffit pas à dire\nSomething que je veux te demander pour de vrai", visual: "🎯💕" },
   { text: "Parce que tu n'es pas juste un feeling de Snapchat\nTu es devenue ma personne préférée", visual: "👑✨" }
@@ -344,3 +344,4 @@ yesBtn.onclick = () => {
     }
   }, 150);
 };
+
