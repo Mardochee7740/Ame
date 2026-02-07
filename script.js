@@ -297,7 +297,7 @@ document.getElementById("storyBox").onclick = () => {
   } else {
     // FIN DE L'HISTOIRE → QUESTION FINALE
     noBtnPressCount = 0;
-    finalQuestion.innerText = `${userName}, Tu me donnes une réponse ? ❤️😉✨ t'inquiète si tu ne le sens pas je ne te force pas`;
+    finalQuestion.innerText = `${userName}, Tu me donnes une réponse ? Ce que tu en pense ❤️😉✨ t'inquiète si tu ne le sens pas je ne te force pas.`;
     showScene("scene-question");
   }
 };
@@ -388,6 +388,7 @@ yesBtn.onclick = () => {
     }
   }, 150);
 };
+
 
 
 
