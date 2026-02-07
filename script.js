@@ -89,29 +89,73 @@ window.addEventListener('load', () => {
 
 // HISTOIRE COMPLÈTE - VOTRE VRAIE HISTOIRE
 const storyScenes = [
-    { text: `Heyy [NOM], c'est Mardochée.\n\nJ'ai conçu ça spécialement pour toi.\nÇa m'a pris un temps fou…\nmais j'espère que ça en vaut la peine. 💕`, visual: "🚀❤️", image: "photo1.jpg" },
-  { text: "C'était un jour normal sur Snapchat…\nEt puis tu es apparu(e) dans ma feed", visual: "📱✨" },
-  { text: "Un feeling immédiat. Pas besoin de parler longtemps.", visual: "⚡💫" },
-  { text: "J'ai osé te demander ton WhatsApp\nEt tu as dit oui…", visual: "📲💚" },
-  { text: "Les premiers messages. Les premiers rires.\nLes premiers 'bonne nuit'…", visual: "💬❤️" },
-  { text: "On a commencé à vraiment causer ensemble\nPas juste des 'salut ça va', mais du vrai, du profond", visual: "🗣️✨" },
-  { text: "Je découvrais chaque jour un peu plus de toi\nEt tu me découvrais aussi", visual: "👀💭" },
-  { text: "Chaque notification WhatsApp me faisait sourire\nMême tard le soir, même le matin au réveil", visual: "📬😊" },
-  { text: "Les heures passaient sans qu'on le voit\nOn oubliait le temps en parlant", visual: "⏰🌙" },
-  { text: "Et sans qu'on le prévoie vraiment…\nLes mots sont sortis", visual: "💕💬" },
-  { text: "Je t'ai dit 'tu me plait'…\nEt tu ne m'a pas écoutée", visual: "💌❤️" },
-  { text: "Mais je savait qu'il manquait quelque chose\nCe moment où on se verrait enfin en vrai", visual: "👁️✨" },
-  { text: "Et bientôt ça va arriver…\nCe moment magique où tu seras vraiment là", visual: "🤍🎯" },
-  { text: "Je pense à ce jour avant d'endormir\nQuand je vais enfin te voir en personne", visual: "💭✨" },
-  { text: "Tes messages me manquent quand tu dors\nMais je sais que tu reve de moi surement de temps en temps", visual: "📱💕" },
-  { text: "On a parlé de tout et de rien\nDe toi, de moi", visual: "🌙💬" },
-  { text: "Tu es devenue mon 'bonne nuit' préférée\nMa première pensée en me réveillant", visual: "☀️🌙" },
-  { text: "Je ne fais que penser à toi chaque jour\nTu m'as tellement envouté", visual: "❤️🔥" },
-  { text: "Les jours passent et j'attends ce moment\nOù je vais pouvoir te prendre dans mes bras", visual: "🤗💑" },
-  { text: "Mais avant ça… avant qu'on se voit…\nIl y a quelque chose que je dois vraiment te demander", visual: "❓💍" },
-  { text: "Quelque chose que 'je t'aime' sur WhatsApp ne suffit pas à dire\nSomething que je veux te demander pour de vrai", visual: "🎯💕" },
-  { text: "Parce que tu n'es pas juste un feeling de Snapchat\nTu es devenue ma personne préférée", visual: "👑✨" }
+  {
+    text: `Hey [NOM], c’est Mardochée.\n\nJ’ai écrit ça comme on écrit une lettre.\nAvec douceur.\nSans urgence. 🤍`,
+    visual: "✨🤍",
+    image: "photo1.jpg"
+  },
+  {
+    text: "On se connaît depuis longtemps.\nBEP1, BEP2.\nDes années simples, sans promesses.",
+    visual: "📚⏳"
+  },
+  {
+    text: "Puis le temps a passé.\nChacun a suivi sa route.",
+    visual: "🌫️🚶‍♀️"
+  },
+  {
+    text: "Et un jour, presque par hasard…\nJe t’ai revue.",
+    visual: "👀✨"
+  },
+  {
+    text: "Ce jour-là,\nquelque chose s’est mis à vibrer.",
+    visual: "💫🤍"
+  },
+  {
+    text: "Pas un coup de foudre.\nPlutôt une évidence douce.",
+    visual: "🌿✨"
+  },
+  {
+    text: "Je t’ai parlé avec sincérité.\nSans détour.",
+    visual: "🗣️🤍"
+  },
+  {
+    text: "Je tiens à toi.\nVraiment.\nEt ce que je ressens pour toi est calme,\nmais sincère.",
+    visual: "❤️🌿"
+  },
+  {
+    text: "Être avec toi me fait du bien.\nMême dans le silence.\nMême quand on ne dit pas grand-chose.",
+    visual: "🌙✨"
+  },
+  {
+    text: "Parfois, je ressens un peu de distance.\nJe ne le dis pas comme un reproche.\nJuste comme un ressenti.",
+    visual: "❄️🤍"
+  },
+  {
+    text: "Peut-être que c’est ta façon d’être.\nEt je la respecte.",
+    visual: "🕊️✨"
+  },
+  {
+    text: "Moi, quand je fais un pas vers toi,\nje le fais avec envie.\nAvec le cœur ouvert.",
+    visual: "👣❤️"
+  },
+  {
+    text: "J’aime être présent.\nJ’aime m’investir.\nQuand je suis là,\nje le suis vraiment.",
+    visual: "🤍🔥"
+  },
+  {
+    text: "Alors j’aimerais,\nsimplement,\nqu’on avance ensemble\nun peu plus engagés.",
+    visual: "✨🤝"
+  },
+  {
+    text: "Sans se forcer.\nSans se promettre trop.\nJuste avec l’envie.",
+    visual: "🌿🤍"
+  },
+  {
+    text: "Quoi qu’il arrive,\nEt je voulais que tu le saches.",
+    visual: "💎🤍"
+  }
 ];
+    
 
 /* ---------- GESTION SCÈNES ---------- */
 function showScene(id) {
@@ -253,7 +297,7 @@ document.getElementById("storyBox").onclick = () => {
   } else {
     // FIN DE L'HISTOIRE → QUESTION FINALE
     noBtnPressCount = 0;
-    finalQuestion.innerText = `${userName}, veux-tu VRAIMENT flirter avec moi ? ❤️😉✨`;
+    finalQuestion.innerText = `${userName}, Tu me donnes une réponse ? ❤️😉✨ t'inquiète si tu ne le sens pas je ne te force pas`;
     showScene("scene-question");
   }
 };
@@ -301,7 +345,7 @@ yesBtn.onclick = () => {
   
   // Attendre un peu avant d'afficher le message final
   setTimeout(() => {
-    finalText.innerText = `${userName}, tu me rends le plus heureux/heureuse du monde.\n\nOn a commencé sur Snapchat,\npassé par WhatsApp,\net maintenant tu es vraiment mienne. ❤️`;
+    finalText.innerText = `${userName}, tu me rends le plus heureux. ❤️`;
     showScene("scene-final");
 
     // Confettis avec explosion massive
@@ -344,5 +388,6 @@ yesBtn.onclick = () => {
     }
   }, 150);
 };
+
 
 
